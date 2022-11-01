@@ -4,7 +4,19 @@ body {
 }
 
 #my-name {
+  font-family: $title-brand;
+  font-size: 24px;
   font-weight: bold;
   text-align: center;
   margin-top: 16px;
+}
+
+.text-presentation {
+  font-family: $text-brand;
+  text-align: center;
+}
+
+.legend {
+  font-family: $link;
+  text-align: center;
 }

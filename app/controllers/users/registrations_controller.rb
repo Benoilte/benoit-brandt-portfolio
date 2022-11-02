@@ -44,11 +44,7 @@ class Users::RegistrationsController < Devise::RegistrationsController
   def one_user_registered?
     return unless User.count == 1
 
-    if user_signed_in?
-      redirect_to root_path
-    else
-      redirect_to new_user_session_path
-    end
+    redirect_to root_path
   end
 
   # If you have extra params to permit, append them to the sanitizer.

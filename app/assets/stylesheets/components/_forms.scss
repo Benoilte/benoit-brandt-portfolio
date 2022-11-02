@@ -1,0 +1,27 @@
+.text-informatif {
+  font-family: $text-brand;
+  text-align: center;
+}
+
+#new_user {
+  width: 50%;
+  text-align: center;
+  margin: 20px auto;
+}
+
+.form {
+  color: gray;
+  padding: 30px;
+}
+
+.form-control {
+  // background-color: white;
+  border: gray;
+  border-radius: 10px;
+  color: gray
+}
+
+.btn-submit {
+  text-align: center;
+  padding: 30px;
+}

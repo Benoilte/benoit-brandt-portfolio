@@ -1,20 +1,20 @@
-<h2>Log in</h2>
+<p class="text-informatif"><strong>Sorry but I keep this place for maintenance</strong></p>
+<div class="text-center d-flex justify-content-around">
+  <%= link_to 'Go back ''<i class="fa-solid fa-rotate-left"></i>'.html_safe, root_path, class: "nav-link" %>
+</div>
 
 <%= simple_form_for(resource, as: resource_name, url: session_path(resource_name), data: {turbo: false}) do |f| %>
   <div class="form-inputs">
     <%= f.input :email,
-                required: false,
-                autofocus: true,
-                input_html: { autocomplete: "email" } %>
+                label: "Keyword",
+                required: false %>
     <%= f.input :password,
+                label: "Secret",
                 required: false,
                 input_html: { autocomplete: "current-password" } %>
-    <%= f.input :remember_me, as: :boolean if devise_mapping.rememberable? %>
   </div>
 
   <div class="form-actions">
     <%= f.button :submit, "Log in" %>
   </div>
 <% end %>
-
-<%= render "devise/shared/links" %>

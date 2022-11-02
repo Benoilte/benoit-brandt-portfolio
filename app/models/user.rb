@@ -6,4 +6,5 @@ class User < ApplicationRecord
 
   has_many :projects
   has_many :professionnal_experiences
+  has_many :trainings
 end

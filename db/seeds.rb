@@ -1,6 +1,6 @@
 puts "Cleaning previous seed"
 Project.destroy_all
-ProfessionnalExperience.destroy_all
+ProfessionalExperience.destroy_all
 Training.destroy_all
 Trip.destroy_all
 
@@ -17,12 +17,12 @@ Project.create!(title: "Next stop",
 # ProfessionalExperiences creation
 puts "ProfessionalExperiences Creation"
 
-ProfessionnalExperience.create!(title: "Automaticien",
-                                description: "Upgrading printing machine",
-                                location: "Mex",
-                                start_date: Date.new(2022, 9, 1),
-                                end_date: Date.new(2022, 9, 9),
-                                user: User.last)
+ProfessionalExperience.create!(title: "Automaticien",
+                               description: "Upgrading printing machine",
+                               location: "Mex",
+                               start_date: Date.new(2022, 9, 1),
+                               end_date: Date.new(2022, 9, 9),
+                               user: User.last)
 
 # Training creation
 puts "Training Creation"

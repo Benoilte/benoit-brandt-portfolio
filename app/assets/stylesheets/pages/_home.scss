@@ -3,8 +3,24 @@ body {
   background-color: white;
 }
 
+.full-content {
+  text-align: center;
+}
 
+.text-presentation {
+  font-family: $text-brand;
+}
 
-.remove-disc {
-  list-style-type: none;
+.social-network ul {
+  padding: 0;
+}
+
+.social-network ul li {
+  display: inline-block;
+  text-decoration: none;
+  color: black;
+}
+
+.social-network ul li a {
+  color: black;
 }

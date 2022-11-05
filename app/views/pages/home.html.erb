@@ -1,2 +1,22 @@
 <h1 id="my-name">Benoit Brandt</h1>
 <h4 id="presentation">full stack developer</h4>
+
+<div class="home-page-infos">
+  <ul class="remove-disc">
+    <% @professionalexperiences.each do |professionalexperience| %>
+      <li>
+        <p><%= professionalexperience.title %></p>
+        <p><%= professionalexperience.company %></p>
+      </li>
+    <% end %>
+  </ul>
+
+  <ul class="remove-disc">
+    <% @trainings.each do |training| %>
+      <li>
+        <p><%= training.title %></p>
+        <p><%= training.institution %></p>
+      </li>
+    <% end %>
+  </ul>
+</div>

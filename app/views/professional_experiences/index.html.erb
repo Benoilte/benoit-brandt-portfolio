@@ -1,2 +1,22 @@
 <%= render "shared/my-name" %>
+<h4 id="presentation">full stack developer</h4>
 
+<div class="home-page-infos">
+  <ul class="remove-disc">
+    <% @professional_experiences.each do |professional_experience| %>
+      <li>
+        <p><%= professional_experience.title %></p>
+        <p><%= professional_experience.company %></p>
+      </li>
+    <% end %>
+  </ul>
+
+  <ul class="remove-disc">
+    <% @trainings.each do |training| %>
+      <li>
+        <p><%= training.title %></p>
+        <p><%= training.institution %></p>
+      </li>
+    <% end %>
+  </ul>
+</div>

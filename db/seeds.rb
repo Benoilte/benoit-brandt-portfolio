@@ -25,8 +25,41 @@ ProfessionalExperience.create!(title: "Automaticien",
                                end_date: Date.new(2022, 9, 9),
                                user: User.last)
 
+ProfessionalExperience.create!(title: "Automaticien",
+                               company: "TL",
+                               description: "Upgrading public transport",
+                               location: "Lausanne",
+                               start_date: Date.new(2022, 9, 1),
+                               end_date: Date.new(2022, 9, 9),
+                               user: User.last)
+
+ProfessionalExperience.create!(title: "Personnal project",
+                               company: "",
+                               description: "renovate Peugeot J5 - Travel around europe",
+                               location: "Europe",
+                               start_date: Date.new(2022, 9, 1),
+                               end_date: Date.new(2022, 9, 9),
+                               user: User.last)
+
+
 # Training creation
 puts "Training Creation"
+
+Training.create!(title: "CFC Automaticien",
+                 institution: "BOBST SA",
+                 description: "Learn automation",
+                 location: "Mex",
+                 start_date: Date.new(2022, 9, 1),
+                 end_date: Date.new(2022, 9, 9),
+                 user: User.last)
+
+Training.create!(title: "Technical maturity",
+                 institution: "CPNV",
+                 description: "Master of technique",
+                 location: "Yverdon-les-bains",
+                 start_date: Date.new(2022, 9, 1),
+                 end_date: Date.new(2022, 9, 9),
+                 user: User.last)
 
 Training.create!(title: "Developer fullstack",
                  institution: "Le wagon",

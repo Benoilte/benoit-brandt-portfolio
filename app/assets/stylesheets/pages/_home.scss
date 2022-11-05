@@ -3,50 +3,6 @@ body {
   background-color: white;
 }
 
-//devices (under, 340px)
-#my-name {
-  font-family: $title-brand;
-  transition: font-size 0.8s;
-  font-size: 24px;
-  font-weight: bold;
-  text-align: center;
-  margin-top: 16px;
-}
-
-#presentation {
-  font-family: $title-brand;
-  font-size: 12px;
-  font-weight: bold;
-  text-align: center;
-  margin-top: 16px;
-}
-
 .remove-disc {
   list-style-type: none;
-}
-
-//devices (desktops, 340px and up)
-@media (min-width: 340px) {
-  #my-name {
-    transition: font-size 0.8s;
-    font-size: 32px;
-  }
-
-  #presentation {
-    transition: font-size 0.8s;
-    font-size: 16px;
-  }
-}
-
-//devices (desktops, 480px and up)
-@media (min-width: 480px) {
-  #my-name {
-    transition: font-size 0.8s;
-    font-size: 48px;
-  }
-
-  #presentation {
-    transition: font-size 0.8s;
-    font-size: 20px;
-  }
 }

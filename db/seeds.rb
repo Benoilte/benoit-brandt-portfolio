@@ -18,6 +18,7 @@ Project.create!(title: "Next stop",
 puts "ProfessionalExperiences Creation"
 
 ProfessionalExperience.create!(title: "Automaticien",
+                               company: "Bobst SA",
                                description: "Upgrading printing machine",
                                location: "Mex",
                                start_date: Date.new(2022, 9, 1),
@@ -27,7 +28,8 @@ ProfessionalExperience.create!(title: "Automaticien",
 # Training creation
 puts "Training Creation"
 
-Training.create!(title: "Le wagon",
+Training.create!(title: "Developer fullstack",
+                 institution: "Le wagon",
                  description: "Learn to code",
                  location: "Nantes",
                  start_date: Date.new(2022, 9, 1),

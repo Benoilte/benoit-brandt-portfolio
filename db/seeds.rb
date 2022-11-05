@@ -18,6 +18,7 @@ Project.create!(title: "Next stop",
 puts "ProfessionalExperiences Creation"
 
 ProfessionalExperience.create!(title: "Automaticien",
+                               company: "Bobst SA",
                                description: "Upgrading printing machine",
                                location: "Mex",
                                start_date: Date.new(2022, 9, 1),

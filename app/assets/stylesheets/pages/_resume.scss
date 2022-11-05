@@ -13,6 +13,10 @@
   margin-top: 16px;
 }
 
+.remove-disc {
+  list-style-type: none;
+}
+
 //devices (desktops, 340px and up)
 @media (min-width: 340px) {
   #presentation {

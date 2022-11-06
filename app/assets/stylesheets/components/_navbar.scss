@@ -1,4 +1,13 @@
 .navbar-lewagon {
-  justify-content: center;
+  justify-content: space-between;
   background: white;
+}
+
+.navbar-lewagon .navbar-collapse {
+  flex-grow: 0;
+}
+
+.navbar-brand {
+  font-family: $title-brand;
+  font-size: 16px;
 }

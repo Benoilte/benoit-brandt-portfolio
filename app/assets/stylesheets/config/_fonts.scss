@@ -1,18 +1,14 @@
 // Import Google fonts
-@import url('https://fonts.googleapis.com/css?family=Nunito:400,700|Work+Sans:400,700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;700&family=Source+Sans+3:ital,wght@0,500;0,700;1,700&display=swap');
-@import url('http://fonts.cdnfonts.com/css/nexa-rust-extras');
-@import url('http://fonts.cdnfonts.com/css/avenir-next-lt-pro');
 
 // Define fonts for body and headers
 $headers-font: "Nexa Rust Sans Black", "Helvetica", "sans-serif";
 // $headers-font: "Nunito", "Helvetica", "sans-serif";
-$body-font: "Work Sans", "Helvetica", "sans-serif";
+$body-font: 'Source Code Pro', sans-serif;
 // $body-font: "Work Sans", "Helvetica", "sans-serif";
 
 $title-brand: "Nexa Rust Sans";
-$text-brand: 'Source Sans 3', sans-serif;
-$subtile-brand: 'Source Code Pro', monospace;
+$text-brand: 'Source Sans Pro', sans-serif;
+$subtile-brand: 'Source Code Pro', sans-serif;
 $link: 'Avenir Next LT Pro', sans-serif;
 
 .text-link {

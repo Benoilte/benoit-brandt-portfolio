@@ -19,8 +19,16 @@
   font-size: 24px;
 }
 
-.social-network a {
+.social-network {
   text-decoration: none;
   color: black;
   margin-left: 24px;
+  transition: color 0.5s;
+}
+
+.social-network:hover {
+  color: white;
+  background: linear-gradient(#000000, #000000) no-repeat;
+  background-position: center;
+  background-size: 90% 80%;
 }

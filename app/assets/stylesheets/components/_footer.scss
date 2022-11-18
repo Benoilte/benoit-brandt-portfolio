@@ -19,8 +19,16 @@
   font-size: 24px;
 }
 
-.social-network a {
+.social-network {
   text-decoration: none;
   color: black;
   margin-left: 24px;
+  transition: background-color 0.5s, box-shadow 0.5s, color 1s;
+}
+
+.social-network:hover {
+  color: white;
+  background-color: black;
+  box-shadow: 0px 3px 0 1px white inset, 0 -3px 0 1px white inset;
+  transition: background-color 0.3s, box-shadow 0.3s, color 1s;
 }

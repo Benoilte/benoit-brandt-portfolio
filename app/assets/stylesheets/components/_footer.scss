@@ -23,12 +23,13 @@
   text-decoration: none;
   color: black;
   margin-left: 24px;
-  transition: background-color 0.5s, box-shadow 0.5s, color 1s;
+  transition: color 0.5s;
 }
 
 .social-network:hover {
   color: white;
-  background-color: black;
-  box-shadow: 0px 3px 0 1px white inset, 0 -3px 0 1px white inset;
-  transition: background-color 0.3s, box-shadow 0.3s, color 1s;
+  // background-color: black;
+  // box-shadow: 0px 3px 0 1px white inset, 0 -3px 0 1px white inset;
+  // transition: box-shadow 3s
+  background: linear-gradient(transparent 10%, #000000 10%, #000000 90%, transparent 90%);
 }

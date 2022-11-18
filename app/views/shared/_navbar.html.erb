@@ -1,4 +1,4 @@
-<div class="navbar navbar-expand-sm navbar-lewagon">
+<div class="navbar navbar-expand-sm navbar-benoilte">
   <div class="container-fluid">
     <%= link_to "BENOIT BRANDT", root_path, class: "navbar-brand" %>
 
@@ -7,22 +7,22 @@
     </button>
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto text-link">
-          <li class="nav-item active">
-            <%= link_to "Home", root_path, class: "nav-link" %>
-          </li>
-          <li class="nav-item active">
-            <%= link_to "Resume", professional_experiences_path, class: "nav-link" %>
+      <ul class="navbar-nav me-auto navbar-links">
+          <li class="nav-item">
+            <%= link_to "Home", root_path, class: class_names({ "navbar-link": !current_page?('/'), "active-page": current_page?('/')}) %>
           </li>
           <li class="nav-item">
-            <%= link_to "Projects", projects_path, class: "nav-link" %>
+            <%= link_to "Resume", professional_experiences_path, class: class_names({ "navbar-link": !current_page?('/professional_experiences'), "active-page": current_page?('/professional_experiences')}) %>
           </li>
           <li class="nav-item">
-            <%= link_to "About", about_path, class: "nav-link" %>
+            <%= link_to "Projects", projects_path, class: class_names({ "navbar-link": !current_page?('/projects'), "active-page": current_page?('/projects')}) %>
+          </li>
+          <li class="nav-item">
+            <%= link_to "About", about_path, class: class_names({ "navbar-link": !current_page?('/about'), "active-page": current_page?('/about')}) %>
           </li>
           <% if user_signed_in? %>
             <li class="nav-item">
-              <%= link_to "Log out", destroy_user_session_path, data: {turbo_method: :delete}, class: "nav-link" %>
+              <%= link_to "Log out", destroy_user_session_path, data: {turbo_method: :delete}, class: "navbar-link" %>
             </li>
           <% end %>
       </ul>

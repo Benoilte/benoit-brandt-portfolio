@@ -6,3 +6,41 @@ body {
 .full-content {
   text-align: center;
 }
+
+.text-presentation {
+  font-family: "Source Sans Pro", sans-serif;
+  text-align: justify;
+  margin-top: 16px;
+}
+
+.home-page-link {
+  display: inline-block;
+  position: relative;
+  text-decoration: none;
+  font-style: italic;
+  font-weight: lighter;
+  color: black;
+  border-bottom: 1px solid transparent;
+  transition: color 1s;
+}
+
+.home-page-link:hover {
+  color: black;
+}
+
+.home-page-link::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  background-color: black;
+  transform-origin: bottom left;
+  transition: transform 0.5s ease-out;
+}
+
+.home-page-link:hover::after {
+  transform: scaleX(1);
+}

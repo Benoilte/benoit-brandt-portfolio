@@ -20,6 +20,9 @@
           <li class="nav-item">
             <%= link_to "About", about_path, class: class_names({ "navbar-link": !current_page?('/about'), "active-page": current_page?('/about')}) %>
           </li>
+          <li class="nav-item">
+            <%= link_to "contact", contact_path, class: class_names({ "navbar-link": !current_page?('/contact'), "active-page": current_page?('/contact')}) %>
+          </li>
           <% if user_signed_in? %>
             <li class="nav-item">
               <%= link_to "Log out", destroy_user_session_path, data: {turbo_method: :delete}, class: "navbar-link" %>

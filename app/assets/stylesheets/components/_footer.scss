@@ -1,17 +1,26 @@
 #footer {
-  position: absolute;
+  position: fixed;
   bottom: 0;
   width: 100%;
   margin: 0 auto;
+  background-color: #e9ecef;
+  height: 40px;
+  border-top: 1px solid black;
 }
 
 .footer-content {
   display: flex;
   justify-content: space-around;
+  align-items: center;
 }
 
-.footer-info {
+// .footer-info {
+//   font-family: $link;
+// }
+
+.footer-info p{
   font-family: $link;
+  margin: 0;
 }
 
 .social-networks {
@@ -27,7 +36,7 @@
 }
 
 .social-network:hover {
-  color: white;
+  color: #e9ecef;
   background: linear-gradient(#000000, #000000) no-repeat;
   background-position: center;
   background-size: 90% 80%;

@@ -1,0 +1,25 @@
+.contact-new-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.contac-form {
+  display: block;
+  text-align: center;
+  width: 100%;
+}
+
+.contac-form .new_contact{
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.contact-text-info {
+  font-family: "Source Sans Pro", sans-serif;
+  text-align: justify;
+  width: 100%;
+  padding: 0 60px;
+}

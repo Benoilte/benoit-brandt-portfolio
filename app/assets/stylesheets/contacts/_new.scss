@@ -1,7 +1,7 @@
 .contact-new-content {
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  flex-direction: column-reverse;
 }
 
 .contac-form {
@@ -22,4 +22,12 @@
   text-align: justify;
   width: 100%;
   padding: 0 60px;
+}
+
+//devices (desktops, 650px and up)
+@media (min-width: 650px) {
+  .contact-new-content{
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
 }

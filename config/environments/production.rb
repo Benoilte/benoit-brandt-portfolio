@@ -2,7 +2,7 @@ require "active_support/core_ext/integer/time"
 
 Rails.application.configure do
   # config for MailGun adds on
-  config.smtp_settings = {
+  ActionMailer::Base.smtp_settings = {
     port: ENV.fetch('MAILGUN_SMTP_PORT'),
     address: ENV.fetch('MAILGUN_SMTP_SERVER'),
     user_name: ENV.fetch('MAILGUN_SMTP_LOGIN'),
@@ -11,7 +11,7 @@ Rails.application.configure do
     authentication: :plain
   }
 
-  config.delivery_method = :smtp
+  ActionMailer::Base.delivery_method = :smtp
 
   # use it with postkmark
   # config.action_mailer.delivery_method     = :postmark

@@ -1,29 +1,31 @@
 <%= render "shared/my-name" %>
-<h4 id="presentation">full stack developer</h4>
+<!-- <h4 id="presentation">full stack developer</h4> -->
 
 
-<div class="resume-page-infos">
-  <div class="work-experiences">
-    <h1 class="list-title">Work</h1>
-    <ul class="remove-disc">
-      <% @professional_experiences.each do |professional_experience| %>
-        <li>
-          <p><%= professional_experience.title %></p>
-          <p><%= professional_experience.company %></p>
-        </li>
-      <% end %>
-    </ul>
+<div class="resume-index-content">
+  <div class="experiences">
+    <div class="work-experiences">
+      <h1 class="list-title">Work</h1>
+      <ul class="remove-disc">
+        <% @professional_experiences.each do |professional_experience| %>
+          <li>
+            <p><%= professional_experience.title %> - <%= professional_experience.company %></p>
+          </li>
+        <% end %>
+      </ul>
+    </div>
+    <div class="study-experience">
+      <h1 class="list-title">Study</h1>
+      <ul class="remove-disc">
+        <% @trainings.each do |training| %>
+          <li>
+            <p><%= training.title %> - <%= training.institution %></p>
+          </li>
+        <% end %>
+      </ul>
+    </div>
   </div>
-
-  <div class="study-experience">
-    <h1 class="list-title">Study</h1>
-    <ul class="remove-disc">
-      <% @trainings.each do |training| %>
-        <li>
-          <p><%= training.title %></p>
-          <p><%= training.institution %></p>
-        </li>
-      <% end %>
-    </ul>
+  <div class="experience-description">
+    <p class="text-experience-description">click on one experience to see the description</p>
   </div>
 </div>

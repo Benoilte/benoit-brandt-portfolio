@@ -1,9 +1,23 @@
-#presentation {
-  font-family: $title-brand;
-  font-size: 12px;
-  font-weight: bold;
-  text-align: center;
-  margin-top: 16px;
+// #presentation {
+//   font-family: $title-brand;
+//   font-size: 12px;
+//   font-weight: bold;
+//   text-align: center;
+//   margin-top: 16px;
+// }
+
+.resume-index-content {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.experience-description {
+  padding: 12px;
+}
+
+.text-experience-description {
+  border-top: 1px solid black;
 }
 
 .list-title {
@@ -18,18 +32,30 @@
   padding: 0;
 }
 
-//devices (desktops, 340px and up)
-@media (min-width: 340px) {
-  #presentation {
-    transition: font-size 0.8s;
-    font-size: 16px;
+//devices (desktops, 650px and up)
+@media (min-width: 650px) {
+  .resume-index-content{
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  .text-experience-description {
+    border-top: none;
   }
 }
 
-//devices (desktops, 480px and up)
-@media (min-width: 480px) {
-  #presentation {
-    transition: font-size 0.8s;
-    font-size: 20px;
-  }
-}
+// //devices (desktops, 340px and up)
+// @media (min-width: 340px) {
+//   #presentation {
+//     transition: font-size 0.8s;
+//     font-size: 16px;
+//   }
+// }
+
+// //devices (desktops, 480px and up)
+// @media (min-width: 480px) {
+//   #presentation {
+//     transition: font-size 0.8s;
+//     font-size: 20px;
+//   }
+// }

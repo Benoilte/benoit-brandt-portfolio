@@ -2,6 +2,7 @@ import { Controller } from "@hotwired/stimulus"
 
 // Connects to data-controller="display-description-resume"
 export default class extends Controller {
+  static targets = ["descriptionText"]
   connect() {
     this.workData = [];
     this.studyData = [];
@@ -13,7 +14,6 @@ export default class extends Controller {
     fetch(this.url)
     .then(response =>response.json())
     .then(response =>response.forEach(data => {
-      console.log(typeof data.work_id === "undefined");
       if(typeof data.work_id !== "undefined") {
         this.workData.push(data);
       } else {
@@ -23,7 +23,12 @@ export default class extends Controller {
   }
 
   displayDescription({ params: { id, section } }) {
-    console.log(id);
-    console.log(`${section}_description`);
+    if(section === "work"){
+      this.description = this.workData.find(element => element.work_id === id).work_description;
+      this.descriptionTextTarget.innerText = this.description
+    } else {
+      this.description = this.studyData.find(element => element.study_id === id).study_description;
+      this.descriptionTextTarget.innerText = this.description
+    }
   }
 }

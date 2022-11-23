@@ -4,6 +4,9 @@
 
 import { application } from "./application"
 
+import DisplayDescriptionResumeController from "./display_description_resume_controller"
+application.register("display-description-resume", DisplayDescriptionResumeController)
+
 import HelloController from "./hello_controller"
 application.register("hello", HelloController)
 

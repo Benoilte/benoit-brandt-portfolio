@@ -23,14 +23,16 @@ ProfessionalExperience.create!(title: "Automaticien",
                                location: "Mex",
                                start_date: Date.new(2022, 9, 1),
                                end_date: Date.new(2022, 9, 9),
+                               link: "https://www.bobst.com/usen/products/gravure-printing-converting/gravure-printing-converting-lines/overview/machine/registronr-s-6100/",
                                user: User.last)
 
-ProfessionalExperience.create!(title: "Automaticien",
-                               company: "TL",
-                               description: "Upgrading public transport",
-                               location: "Lausanne",
+ProfessionalExperience.create!(title: "Teacher Assistant",
+                               company: "Le Wagon",
+                               description: "Learn code to new student",
+                               location: "Nantes",
                                start_date: Date.new(2022, 9, 1),
                                end_date: Date.new(2022, 9, 9),
+                               link: "https://www.lewagon.com/nantes",
                                user: User.last)
 
 ProfessionalExperience.create!(title: "Personnal project",
@@ -39,6 +41,7 @@ ProfessionalExperience.create!(title: "Personnal project",
                                location: "Europe",
                                start_date: Date.new(2022, 9, 1),
                                end_date: Date.new(2022, 9, 9),
+                               link: "",
                                user: User.last)
 
 

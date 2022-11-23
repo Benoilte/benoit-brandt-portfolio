@@ -54,6 +54,7 @@ Training.create!(title: "CFC Automaticien",
                  location: "Mex",
                  start_date: Date.new(2022, 9, 1),
                  end_date: Date.new(2022, 9, 9),
+                 link: "",
                  user: User.last)
 
 Training.create!(title: "Technical maturity",
@@ -62,6 +63,7 @@ Training.create!(title: "Technical maturity",
                  location: "Yverdon-les-bains",
                  start_date: Date.new(2022, 9, 1),
                  end_date: Date.new(2022, 9, 9),
+                 link: "",
                  user: User.last)
 
 Training.create!(title: "Developer fullstack",
@@ -70,6 +72,7 @@ Training.create!(title: "Developer fullstack",
                  location: "Nantes",
                  start_date: Date.new(2022, 9, 1),
                  end_date: Date.new(2022, 9, 9),
+                 link: "",
                  user: User.last)
 
 # Trip creation

@@ -27,6 +27,8 @@
   color: black;
   text-decoration: none;
   padding: 0px 4px 0px 4px;
+  pointer-events: none;
+  cursor: default;
 }
 
 .active-page:hover {

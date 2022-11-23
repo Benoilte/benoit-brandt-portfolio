@@ -14,6 +14,7 @@
 
 .experience-description {
   padding: 12px;
+  width: 100%;
 }
 
 .text-experience-description {
@@ -37,6 +38,10 @@
   .resume-index-content{
     flex-direction: row;
     justify-content: space-evenly;
+  }
+
+  .experience-description {
+    width: 480px;
   }
 
   .text-experience-description {

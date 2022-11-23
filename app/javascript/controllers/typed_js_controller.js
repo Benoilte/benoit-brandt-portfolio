@@ -6,6 +6,10 @@ export default class extends Controller {
   static targets = ["explication"]
 
   connect() {
+    this.descriptionExplication()
+  }
+
+  descriptionExplication() {
     new Typed(this.explicationTarget, {
       strings: ["click on one experience to see the description"],
       typeSpeed: 50,

@@ -9,23 +9,23 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto navbar-links">
           <li class="nav-item">
-            <%= link_to "Home", root_path, class: class_names({ "navbar-link": !current_page?('/'), "active-page": current_page?('/')}) %>
+            <%= link_to "Home", root_path, class: class_names({ "navbar-link underline-link": !current_page?('/'), "active-page": current_page?('/')}) %>
           </li>
           <li class="nav-item">
-            <%= link_to "Resume", professional_experiences_path, class: class_names({ "navbar-link": !current_page?('/professional_experiences'), "active-page": current_page?('/professional_experiences')}) %>
+            <%= link_to "Resume", professional_experiences_path, class: class_names({ "navbar-link underline-link": !current_page?('/professional_experiences'), "active-page": current_page?('/professional_experiences')}) %>
           </li>
           <li class="nav-item">
-            <%= link_to "Projects", projects_path, class: class_names({ "navbar-link": !current_page?('/projects'), "active-page": current_page?('/projects')}) %>
+            <%= link_to "Projects", projects_path, class: class_names({ "navbar-link underline-link": !current_page?('/projects'), "active-page": current_page?('/projects')}) %>
           </li>
           <li class="nav-item">
-            <%= link_to "About", about_path, class: class_names({ "navbar-link": !current_page?('/about'), "active-page": current_page?('/about')}) %>
+            <%= link_to "About", about_path, class: class_names({ "navbar-link underline-link": !current_page?('/about'), "active-page": current_page?('/about')}) %>
           </li>
           <li class="nav-item">
-            <%= link_to "contact", new_contact_path, class: class_names({ "navbar-link": !current_page?('/contacts/new'), "active-page": current_page?('/contacts/new')}) %>
+            <%= link_to "contact", new_contact_path, class: class_names({ "navbar-link underline-link": !current_page?('/contacts/new'), "active-page": current_page?('/contacts/new')}) %>
           </li>
           <% if user_signed_in? %>
             <li class="nav-item">
-              <%= link_to "Log out", destroy_user_session_path, data: {turbo_method: :delete}, class: "navbar-link" %>
+              <%= link_to "Log out", destroy_user_session_path, data: {turbo_method: :delete}, class: "navbar-link underline-link" %>
             </li>
           <% end %>
       </ul>

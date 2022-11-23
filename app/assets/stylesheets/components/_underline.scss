@@ -1,0 +1,29 @@
+.underline-link {
+  display: inline-block;
+  position: relative;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: color 1s;
+}
+
+.underline-link:hover{
+  cursor: pointer;
+  color: black;
+}
+
+.underline-link::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  background-color: black;
+  transform-origin: bottom left;
+  transition: transform 0.5s ease-out;
+}
+
+.underline-link:hover::after {
+  transform: scaleX(1);
+}

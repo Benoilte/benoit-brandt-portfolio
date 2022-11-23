@@ -1,27 +1,29 @@
-<div class="resume-index-content" data-controller="display-description-resume">
-  <div class="experiences">
-    <div class="work-experiences">
-      <h1 class="list-title">Work</h1>
-      <ul class="remove-disc">
-        <% @professional_experiences.each do |professional_experience| %>
-          <li>
-            <p class="underline-link" data-action="click->display-description-resume#displayDescription" data-display-description-resume-id-param='<%= professional_experience.id %>' data-display-description-resume-section-param="work"><%= professional_experience.title %> - <%= professional_experience.company %></p>
-          </li>
-        <% end %>
-      </ul>
+<div class="vertical-center-content">
+  <div class="resume-index-content" data-controller="display-description-resume">
+    <div class="experiences">
+      <div class="work-experiences">
+        <h1 class="list-title">Work</h1>
+        <ul class="remove-disc">
+          <% @professional_experiences.each do |professional_experience| %>
+            <li>
+              <p class="underline-link" data-action="click->display-description-resume#displayDescription" data-display-description-resume-id-param='<%= professional_experience.id %>' data-display-description-resume-section-param="work"><%= professional_experience.title %> - <%= professional_experience.company %></p>
+            </li>
+          <% end %>
+        </ul>
+      </div>
+      <div class="study-experience">
+        <h1 class="list-title">Study</h1>
+        <ul class="remove-disc">
+          <% @trainings.each do |training| %>
+            <li>
+              <p class="underline-link" data-action="click->display-description-resume#displayDescription" data-display-description-resume-id-param='<%= training.id %>' data-display-description-resume-section-param="study"><%= training.title %> - <%= training.institution %></p>
+            </li>
+          <% end %>
+        </ul>
+      </div>
     </div>
-    <div class="study-experience">
-      <h1 class="list-title">Study</h1>
-      <ul class="remove-disc">
-        <% @trainings.each do |training| %>
-          <li>
-            <p class="underline-link" data-action="click->display-description-resume#displayDescription" data-display-description-resume-id-param='<%= training.id %>' data-display-description-resume-section-param="study"><%= training.title %> - <%= training.institution %></p>
-          </li>
-        <% end %>
-      </ul>
+    <div class="experience-description">
+      <p data-display-description-resume-target="descriptionText" class="text-experience-description">click on one experience to see the description</p>
     </div>
-  </div>
-  <div class="experience-description">
-    <p data-display-description-resume-target="descriptionText" class="text-experience-description">click on one experience to see the description</p>
   </div>
 </div>

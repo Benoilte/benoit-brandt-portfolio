@@ -9,7 +9,7 @@
       <ul class="remove-disc">
         <% @professional_experiences.each do |professional_experience| %>
           <li>
-            <p><%= professional_experience.title %> - <%= professional_experience.company %></p>
+            <p data-action="click->display-description-resume#displayDescription" data-display-description-resume-id-param='<%= professional_experience.id %>' data-display-description-resume-section-param="work"><%= professional_experience.title %> - <%= professional_experience.company %></p>
           </li>
         <% end %>
       </ul>
@@ -19,7 +19,7 @@
       <ul class="remove-disc">
         <% @trainings.each do |training| %>
           <li>
-            <p><%= training.title %> - <%= training.institution %></p>
+            <p data-action="click->display-description-resume#displayDescription" data-display-description-resume-id-param='<%= training.id %>' data-display-description-resume-section-param="study"><%= training.title %> - <%= training.institution %></p>
           </li>
         <% end %>
       </ul>

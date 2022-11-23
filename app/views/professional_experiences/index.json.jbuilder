@@ -5,7 +5,7 @@ json.array! @professional_experiences do |professional_experience|
 end
 
 json.array! @trainings do |training|
-  json.training_id training.id
-  json.training_description training.description
-  json.training_link training.link
+  json.study_id training.id
+  json.study_description training.description
+  json.study_link training.link
 end

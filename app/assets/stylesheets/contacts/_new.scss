@@ -5,9 +5,7 @@
 }
 
 .contac-form {
-  display: block;
-  text-align: center;
-  width: 100%;
+  padding-left: 12px;
 }
 
 .contac-form .new_contact{
@@ -29,5 +27,9 @@
   .contact-new-content{
     flex-direction: row;
     justify-content: space-evenly;
+  }
+
+  .contac-form {
+    padding-left: 12px;
   }
 }

@@ -1,3 +1,9 @@
+.text-link {
+  font-style: italic;
+  font-weight: lighter;
+  color: black;
+}
+
 .underline-link {
   display: inline-block;
   position: relative;
@@ -26,4 +32,19 @@
 
 .underline-link:hover::after {
   transform: scaleX(1);
+}
+
+
+.selected_link {
+  font-family: $title-brand;
+  font-size: 13.65px;
+  color: black;
+  text-decoration: none;
+  padding: 0px 4px 0px 4px;
+  pointer-events: none;
+  cursor: default;
+}
+
+.selected_link:hover {
+  color: black;
 }

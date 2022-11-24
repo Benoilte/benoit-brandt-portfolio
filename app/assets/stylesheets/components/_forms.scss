@@ -25,3 +25,12 @@
   text-align: center;
   padding: 30px;
 }
+
+#contact_name, #contact_email, #contact_message {
+  width: 330px;
+  font-family: $link;
+}
+
+label {
+  font-family: $link;
+}

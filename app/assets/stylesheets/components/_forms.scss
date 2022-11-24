@@ -29,10 +29,21 @@
 #contact_name, #contact_email, #contact_message {
   width: 320px;
   font-family: $link;
-  border-radius: 12px;
+  border-radius: 2px;
 }
 
 label {
   font-family: $link;
   margin-top: 12px;
+  color: grey;
+  transition: color 1s;
+}
+
+label:hover {
+  color: black;
+  cursor: pointer;
+}
+
+.align-label {
+  text-align: left;
 }

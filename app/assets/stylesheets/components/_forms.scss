@@ -30,6 +30,11 @@
   width: 320px;
   font-family: $link;
   border-radius: 2px;
+  border-width: 1px;
+}
+
+#contact_name:focus-visible, #contact_email:focus-visible, #contact_message:focus-visible {
+  outline-style: solid;
 }
 
 label {

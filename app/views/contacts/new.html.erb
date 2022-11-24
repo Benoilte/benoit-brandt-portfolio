@@ -1,29 +1,31 @@
-<h1>Contact Me</h1>
-<div class="contact-new-content">
-  <div class="contac-form">
-    <%= form_for @contact do |f| %>
-      <div class="">
-        <%= f.label :name %><br>
-        <%= f.text_field  :name, required: true, class: "contact-form-text-area" %><br>
+<div class="center-vertical">
+  <h1>Contact Me</h1>
+  <div class="contact-new-content">
+    <div class="contac-form">
+      <%= form_for @contact do |f| %>
+        <div class="">
+          <%= f.label :name %><br>
+          <%= f.text_field  :name, required: true, class: "contact-form-text-area" %><br>
 
-        <%= f.label :email %><br>
-        <%= f.text_field :email, required: true, class: "contact-form-text-area" %><br>
+          <%= f.label :email %><br>
+          <%= f.text_field :email, required: true, class: "contact-form-text-area" %><br>
 
-        <%= f.label :message %><br>
-        <%= f.text_area :message, rows: 6, required: true, class: "contact-form-text-area",
-              placeholder: "Send me a message"%><br>
+          <%= f.label :message %><br>
+          <%= f.text_area :message, rows: 6, required: true, class: "contact-form-text-area",
+                placeholder: "Send me a message"%><br>
 
-        <div class= "d-none">
-          <%= f.label :nickname %>
-          <%= f.text_field :nickname, :hint => 'Leave this field blank!' %>
+          <div class= "d-none">
+            <%= f.label :nickname %>
+            <%= f.text_field :nickname, :hint => 'Leave this field blank!' %>
+          </div>
+
+          <%= f.submit 'Send Message', class: 'btn-yours' %>
         </div>
-
-        <%= f.submit 'Send Message', class: 'btn-yours' %>
-      </div>
-    <% end %>
-  </div>
-  <div class="contact-text-info">
-    <p>Do not hesitate to send me an email directly with the form on this page. And if you want to know more about me
-    go check my <%= link_to("linkedin account", "https://www.linkedin.com/in/beno%C3%AEt-brandt", class: "text-link underline-link") %> or my <%= link_to("Github account", "https://github.com/Benoilte", class: "text-link underline-link") %> </p>
+      <% end %>
+    </div>
+    <div class="contact-text-info">
+      <p>Do not hesitate to send me an email directly with the form on this page. And if you want to know more about me
+      go check my <%= link_to("linkedin account", "https://www.linkedin.com/in/beno%C3%AEt-brandt", class: "text-link underline-link") %> or my <%= link_to("Github account", "https://github.com/Benoilte", class: "text-link underline-link") %> </p>
+    </div>
   </div>
 </div>

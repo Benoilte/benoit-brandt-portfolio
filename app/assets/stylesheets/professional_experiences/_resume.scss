@@ -3,10 +3,11 @@
   display: flex;
   align-items: center;
   flex-direction: column;
+  justify-content: center;
 }
 
 .experiences {
-  text-align: left;
+  text-align: center;
   padding-left: 12px;
   font-family: $text-brand;
 }
@@ -45,6 +46,7 @@
   }
 
   .experiences {
+    text-align: left;
     border-right: 1px solid black;
     padding-right: 24px;
   }

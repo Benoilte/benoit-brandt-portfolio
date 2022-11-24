@@ -21,17 +21,3 @@
   color: grey;
   padding: 0px 8px 0px 8px;
 }
-
-.active-page {
-  font-family: $title-brand;
-  font-size: 13.65px;
-  color: black;
-  text-decoration: none;
-  padding: 0px 4px 0px 4px;
-  pointer-events: none;
-  cursor: default;
-}
-
-.active-page:hover {
-  color: black;
-}

@@ -6,7 +6,7 @@
         <ul class="remove-disc">
           <% @professional_experiences.each do |professional_experience| %>
             <li>
-              <p class="underline-link" data-action="click->display-description-resume#displayDescription" data-display-description-resume-id-param='<%= professional_experience.id %>' data-display-description-resume-section-param="work"><%= professional_experience.title %> - <%= professional_experience.company %></p>
+              <p class="underline-link" data-display-description-resume-target="experience" data-action="click->display-description-resume#displayDescription" data-display-description-resume-id-param='<%= professional_experience.id %>' data-display-description-resume-section-param="work"><%= professional_experience.title %> <%= professional_experience.company.upcase %></p>
             </li>
           <% end %>
         </ul>
@@ -16,7 +16,7 @@
         <ul class="remove-disc">
           <% @trainings.each do |training| %>
             <li>
-              <p class="underline-link" data-action="click->display-description-resume#displayDescription" data-display-description-resume-id-param='<%= training.id %>' data-display-description-resume-section-param="study"><%= training.title %> - <%= training.institution %></p>
+              <p class="underline-link" data-display-description-resume-target="experience" data-action="click->display-description-resume#displayDescription" data-display-description-resume-id-param='<%= training.id %>' data-display-description-resume-section-param="study"><%= training.title %> <%= training.institution.upcase %></p>
             </li>
           <% end %>
         </ul>

@@ -7,7 +7,8 @@
 }
 
 .experiences {
-  text-align: center;
+  text-align: left;
+  margin: 0 auto;
   padding-left: 12px;
   font-family: $text-brand;
 }
@@ -23,7 +24,6 @@
 }
 
 .list-title {
-  text-align: center;
   font-family: $title-brand;
   font-size: 16px;
   margin-top: 16px;
@@ -36,6 +36,10 @@
 
 .highlight_experience {
   background-color: #e9ecef;
+  border-radius: 2px;
+  display: inline-block;
+  position: relative;
+  border-bottom: 1px solid transparent;
 }
 
 //devices (desktops, 650px and up)
@@ -46,7 +50,7 @@
   }
 
   .experiences {
-    text-align: left;
+    margin: 0;
     border-right: 1px solid black;
     padding-right: 24px;
   }

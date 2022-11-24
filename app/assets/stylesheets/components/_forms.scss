@@ -29,10 +29,26 @@
 #contact_name, #contact_email, #contact_message {
   width: 320px;
   font-family: $link;
-  border-radius: 12px;
+  border-radius: 2px;
+  border-width: 1px;
+}
+
+#contact_name:focus-visible, #contact_email:focus-visible, #contact_message:focus-visible {
+  outline-style: solid;
 }
 
 label {
   font-family: $link;
   margin-top: 12px;
+  color: grey;
+  transition: color 1s;
+}
+
+label:hover {
+  color: black;
+  cursor: pointer;
+}
+
+.align-label {
+  text-align: left;
 }

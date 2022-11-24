@@ -3,7 +3,7 @@
   <div class="contact-new-content">
     <div class="contac-form">
       <%= form_for @contact do |f| %>
-        <div class="">
+        <div class="align-label">
           <%= f.label :name %><br>
           <%= f.text_field  :name, required: true, class: "contact-form-text-area" %><br>
 
@@ -19,7 +19,9 @@
             <%= f.text_field :nickname, :hint => 'Leave this field blank!' %>
           </div>
 
-          <%= f.submit 'Send Message', class: 'btn-yours' %>
+          <div class="btn-align-right">
+            <span class="underline-link"><%= f.submit 'Send Message', class: 'btn-submit-contact' %></span>
+          </div>
         </div>
       <% end %>
     </div>

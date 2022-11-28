@@ -32,7 +32,7 @@ ProfessionalExperience.create!(title: "Automaticien",
 
 ProfessionalExperience.create!(title: "Teacher Assistant",
                                company: "Le Wagon",
-                               description: "Here again... I'm working on the description. Come back soon to have more information",
+                               description: "After my bootcamp, I had the opportunity to be a teacher assistant. I was responsible for helping the new students complete their daily exercises and making sure they understood the subject of the day.",
                                location: "Nantes",
                                start_date: Date.new(2022, 9, 1),
                                end_date: Date.new(2022, 9, 9),

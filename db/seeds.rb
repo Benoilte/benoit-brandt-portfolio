@@ -41,12 +41,26 @@ ProfessionalExperience.create!(title: "Teacher Assistant",
 
 ProfessionalExperience.create!(title: "Personnal project",
                                company: "",
-                               description: "And also here... I'm working on the description. Come back soon to have more information",
+                               description: "After 10 years of challenging work, I decided to start a gap year to take time for personal projects and to think about how to re-orient my career path. \n
+                               During this time, I renovated a 1992 Peugeot J5. New electrical wiring, a new water pump system, new interior insulation, a new LPG system, and new furnishings were all installed. \n
+                               For two months, I helped my father renovate his old farm. I've done a wide range of construction work. \n
+                               I traveled to Great Britain for two months to discover some new places and improve my English. \n
+                               My girlfriend and I traveled around Brittany (France) with our dog and our Peugeot J5.
+                               ",
                                location: "Europe",
                                start_date: Date.new(2022, 9, 1),
                                end_date: Date.new(2022, 9, 9),
                                link: "",
                                user: User.last)
+
+ProfessionalExperience.create!(title: "Developer web self-learning",
+                                company: "Le Wagon",
+                                description: "Following \"Le Wagon\" bootcamp, I continued to practice and learn with various projects as my portfolio or through various learning platforms such as Codecademy, Codewars, or Codingame.",
+                                location: "switzerland",
+                                start_date: Date.new(2022, 9, 1),
+                                end_date: Date.new(2022, 9, 9),
+                                link: "https://www.lewagon.com/nantes",
+                                user: User.last)
 
 
 # Training creation

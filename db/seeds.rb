@@ -19,7 +19,11 @@ puts "ProfessionalExperiences Creation"
 
 ProfessionalExperience.create!(title: "Automaticien",
                                company: "Bobst SA",
-                               description: "I'm working on the description. Come back soon to have more information",
+                               description: "I worked as a field service technician at BOBST SA, one of the world’s leading suppliers of printing, flexible packaging, folding cartons, and corrugated board industries. \n
+                               Most times, I had to perform missions abroad on customer sites, these missions could last a few days to a month or more. I was in charge of upgrading, managing the commissioning, training machine operators, and coordinating the commissioning, the production tests, and the restart in production with the customer.\n
+                               Regularly, I had to train colleagues from other Bobst entities on the new Register products.\n
+                               When I worked in Switzerland, I had to control the installation before sending it to the customer and was responsible for providing technical support to customers or colleagues.
+                               ",
                                location: "Mex",
                                start_date: Date.new(2022, 9, 1),
                                end_date: Date.new(2022, 9, 9),

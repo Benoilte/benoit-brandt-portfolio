@@ -80,7 +80,7 @@ Training.create!(title: "Automaticien apprenticeship",
 
 Training.create!(title: "Technical maturity",
                  institution: "CPNV",
-                 description: "definitely... I'm working on the description. Come back soon to have more information",
+                 description: "in parallel with my apprenticeship as an automation engineer, I passed my Technical maturity.",
                  location: "Yverdon-les-bains",
                  start_date: Date.new(2022, 9, 1),
                  end_date: Date.new(2022, 9, 9),

@@ -54,7 +54,7 @@ ProfessionalExperience.create!(title: "Personnal project",
                                user: User.last)
 
 ProfessionalExperience.create!(title: "Developer web self-learning",
-                                company: "Le Wagon",
+                                company: "",
                                 description: "Following \"Le Wagon\" bootcamp, I continued to practice and learn with various projects as my portfolio or through various learning platforms such as Codecademy, Codewars, or Codingame.",
                                 location: "switzerland",
                                 start_date: Date.new(2022, 9, 1),

@@ -41,10 +41,10 @@ ProfessionalExperience.create!(title: "Teacher Assistant",
 
 ProfessionalExperience.create!(title: "Personnal project",
                                company: "",
-                               description: "After 10 years of challenging work, I decided to start a gap year to take time for personal projects and to think about how to re-orient my career path. \n
-                               During this time, I renovated a 1992 Peugeot J5. New electrical wiring, a new water pump system, new interior insulation, a new LPG system, and new furnishings were all installed. \n
-                               For two months, I helped my father renovate his old farm. I've done a wide range of construction work. \n
-                               I traveled to Great Britain for two months to discover some new places and improve my English. \n
+                               description: "After 10 years of challenging work, I decided to start a gap year to take time for personal projects and to think about how to re-orient my career path.\n
+                               During this time, I renovated a 1992 Peugeot J5. New electrical wiring, a new water pump system, new interior insulation, a new LPG system, and new furnishings were all installed.\n
+                               For two months, I helped my father renovate his old farm. I've done a wide range of construction work.\n
+                               I traveled to Great Britain for two months to discover some new places and improve my English.\n
                                My girlfriend and I traveled around Brittany (France) with our dog and our Peugeot J5.
                                ",
                                location: "Europe",
@@ -66,9 +66,12 @@ ProfessionalExperience.create!(title: "Developer web self-learning",
 # Training creation
 puts "Training Creation"
 
-Training.create!(title: "CFC Automaticien",
+Training.create!(title: "Automaticien apprenticeship",
                  institution: "BOBST SA",
-                 description: "Sorry I'm still working on the description. Come back soon to have more information",
+                 description: "practical work in the fields of mechanics, electricity, pneumatics, electronics, and logic systems.\n
+                 the use of programming software.\n
+                 assembly, commissioning, and troubleshooting of electrical installations.
+                 ",
                  location: "Mex",
                  start_date: Date.new(2022, 9, 1),
                  end_date: Date.new(2022, 9, 9),

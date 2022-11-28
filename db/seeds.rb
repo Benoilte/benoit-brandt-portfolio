@@ -89,7 +89,9 @@ Training.create!(title: "Technical maturity",
 
 Training.create!(title: "Developer fullstack",
                  institution: "Le wagon",
-                 description: "it will be ready tognight !! I'm working on the description. Come back soon to have more information",
+                 description: "9-week full-time intensive coding bootcamp learning HTML, CSS, Bootstrap, JavaScript ES6, SQL, git, GitHub, Heroku, Ruby, and Ruby on Rails.
+                 Designed, implemented, and shipped to production a clone of Airbnb and a Rails application group project.
+                 ",
                  location: "Nantes",
                  start_date: Date.new(2022, 9, 1),
                  end_date: Date.new(2022, 9, 9),

@@ -11,8 +11,9 @@ Project.create!(title: "Next stop",
                 description: "Have a good trip in public transport",
                 link: "www.next-stop.fr",
                 professional: true,
-                start_date: Date.new(2022, 9, 1),
-                end_date: Date.new(2022, 9, 9), user: User.last)
+                start_date: Date.new(2022, 7, 11),
+                end_date: Date.new(2022, 9, 9),
+                user: User.last)
 
 # ProfessionalExperiences creation
 puts "ProfessionalExperiences Creation"
@@ -25,8 +26,8 @@ ProfessionalExperience.create!(title: "Automaticien",
                                When I worked in Switzerland, I had to control the installation before sending it to the customer and was responsible for providing technical support to customers or colleagues.
                                ",
                                location: "Mex",
-                               start_date: Date.new(2022, 9, 1),
-                               end_date: Date.new(2022, 9, 9),
+                               start_date: Date.new(2014, 8, 1),
+                               end_date: Date.new(2021, 4, 30),
                                link: "https://www.bobst.com/usen/products/gravure-printing-converting/gravure-printing-converting-lines/overview/machine/registronr-s-6100/",
                                user: User.last)
 
@@ -34,8 +35,8 @@ ProfessionalExperience.create!(title: "Teacher Assistant",
                                company: "Le Wagon",
                                description: "After my bootcamp, I had the opportunity to be a teacher assistant. I was responsible for helping the new students complete their daily exercises and making sure they understood the subject of the day.",
                                location: "Nantes",
-                               start_date: Date.new(2022, 9, 1),
-                               end_date: Date.new(2022, 9, 9),
+                               start_date: Date.new(2022, 10, 1),
+                               end_date: Date.new(2022, 10, 30),
                                link: "https://www.lewagon.com/nantes",
                                user: User.last)
 
@@ -48,19 +49,18 @@ ProfessionalExperience.create!(title: "Personnal project",
                                My girlfriend and I traveled around Brittany (France) with our dog and our Peugeot J5.
                                ",
                                location: "Europe",
-                               start_date: Date.new(2022, 9, 1),
-                               end_date: Date.new(2022, 9, 9),
+                               start_date: Date.new(2021, 5, 1),
+                               end_date: Date.new(2022, 7, 11),
                                link: "",
                                user: User.last)
 
 ProfessionalExperience.create!(title: "Developer web self-learning",
-                                company: "",
-                                description: "Following \"Le Wagon\" bootcamp, I continued to practice and learn with various projects as my portfolio or through various learning platforms such as Codecademy, Codewars, or Codingame.",
-                                location: "switzerland",
-                                start_date: Date.new(2022, 9, 1),
-                                end_date: Date.new(2022, 9, 9),
-                                link: "https://www.lewagon.com/nantes",
-                                user: User.last)
+                               company: "",
+                               description: "Following \"Le Wagon\" bootcamp, I continued to practice and learn with various projects as my portfolio or through various learning platforms such as Codecademy, Codewars, or Codingame.",
+                               location: "switzerland",
+                               start_date: Date.new(2022, 9, 9),
+                               link: "https://www.lewagon.com/nantes",
+                               user: User.last)
 
 
 # Training creation
@@ -73,8 +73,8 @@ Training.create!(title: "Automaticien apprenticeship",
                  assembly, commissioning, and troubleshooting of electrical installations.
                  ",
                  location: "Mex",
-                 start_date: Date.new(2022, 9, 1),
-                 end_date: Date.new(2022, 9, 9),
+                 start_date: Date.new(2010, 8, 1),
+                 end_date: Date.new(2014, 8, 1),
                  link: "",
                  user: User.last)
 
@@ -82,8 +82,8 @@ Training.create!(title: "Technical maturity",
                  institution: "CPNV",
                  description: "in parallel with my apprenticeship as an automation engineer, I passed my Technical maturity.",
                  location: "Yverdon-les-bains",
-                 start_date: Date.new(2022, 9, 1),
-                 end_date: Date.new(2022, 9, 9),
+                 start_date: Date.new(2010, 8, 1),
+                 end_date: Date.new(2014, 8, 1),
                  link: "",
                  user: User.last)
 
@@ -93,7 +93,7 @@ Training.create!(title: "Developer fullstack",
                  Designed, implemented, and shipped to production a clone of Airbnb and a Rails application group project.
                  ",
                  location: "Nantes",
-                 start_date: Date.new(2022, 9, 1),
+                 start_date: Date.new(2022, 7, 11),
                  end_date: Date.new(2022, 9, 9),
                  link: "",
                  user: User.last)

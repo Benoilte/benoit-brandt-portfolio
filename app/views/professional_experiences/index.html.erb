@@ -6,7 +6,7 @@
         <ul class="remove-disc">
           <% @professional_experiences.each do |professional_experience| %>
             <li>
-              <p class="underline-link" data-display-description-resume-target="experience" data-action="click->display-description-resume#displayDescription" data-display-description-resume-id-param='<%= professional_experience.id %>' data-display-description-resume-section-param="work"><%= professional_experience.title %> <%= professional_experience.company.upcase %></p>
+              <p class="underline-link" data-display-description-resume-target="experience" data-action="click->display-description-resume#displayDescription" data-display-description-resume-id-param='<%= professional_experience.id %>' data-display-description-resume-section-param="work"><%= professional_experience.title %></p>
             </li>
           <% end %>
         </ul>
@@ -16,14 +16,14 @@
         <ul class="remove-disc">
           <% @trainings.each do |training| %>
             <li>
-              <p class="underline-link" data-display-description-resume-target="experience" data-action="click->display-description-resume#displayDescription" data-display-description-resume-id-param='<%= training.id %>' data-display-description-resume-section-param="study"><%= training.title %> <%= training.institution.upcase %></p>
+              <p class="underline-link" data-display-description-resume-target="experience" data-action="click->display-description-resume#displayDescription" data-display-description-resume-id-param='<%= training.id %>' data-display-description-resume-section-param="study"><%= training.title %></p>
             </li>
           <% end %>
         </ul>
       </div>
     </div>
     <div class="experience-description">
-      <h3 data-display-description-resume-target="descriptionCompany" class="company-experience-description">title</h3>
+      <h3 data-display-description-resume-target="descriptionCompany" class="company-experience-description"></h3>
       <h6 data-display-description-resume-target="descriptionDate" class="date-experience-description">date</h6>
       <p data-display-description-resume-target="descriptionText" class="text-experience-description">click on one experience to see the description</p>
     </div>

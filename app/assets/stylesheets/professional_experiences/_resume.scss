@@ -13,6 +13,23 @@
   border-bottom: 1px solid black;
 }
 
+.company-experience-description {
+  text-align: left;
+}
+
+.company-experience-description > h1 {
+  font-size: 16px;
+}
+
+.time-experience-description {
+  text-align: left;
+  font-size: 12px;
+}
+
+.time-experience-description > p {
+margin-bottom: 8px;
+}
+
 .experience-description {
   font-family: $text-brand;
   padding: 12px;
@@ -66,6 +83,14 @@
     justify-content: center;
   }
 
+  .company-experience-description {
+    padding: 0 12px;
+  }
+
+  .time-experience-description {
+    padding: 0 12px;
+  }
+
   .experience-description {
     padding: 0;
     height: 400px;
@@ -75,6 +100,7 @@
   }
 
   .text-experience-description {
+    text-align: left;
     padding: 0 12px;
   }
 }

@@ -63,7 +63,6 @@ ProfessionalExperience.create!(title: "Developer web self-learning",
                                link: "https://www.lewagon.com/nantes",
                                user: User.last)
 
-
 # Training creation
 puts "Training Creation"
 

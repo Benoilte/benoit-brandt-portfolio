@@ -10,4 +10,7 @@ Rails.application.routes.draw do
   resources :projects, only: [:index]
 
   resources :contacts, only: %i[new create]
+
+  get "/service-worker.js", to: "service_worker#service_worker"
+  get "/manifest.json", to: "service_worker#manifest"
 end

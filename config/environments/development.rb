@@ -73,5 +73,6 @@ Rails.application.configure do
   # config.action_cable.disable_request_forgery_protection = true
 
   # set local host for development environnement
-  config.hosts << /\w{4}-\d{3}-\d{3}-\d{3}-\d{3}\.ngrok\.io/
+  # config.hosts << /\w{4}-\d{3}-\d{3}-\d{3}-\d{3}\.ngrok\.io/
+  config.hosts.clear
 end

@@ -23,7 +23,7 @@ export default class extends Controller {
   }
 
   displayDescription(event) {
-    // this.toggleExperienceTargetClass(event)
+    this.toggleExperienceTargetClass(event)
     event.currentTarget.classList.add("highlight_experience")
     event.currentTarget.classList.remove("underline-link")
     this.id = event.params.id

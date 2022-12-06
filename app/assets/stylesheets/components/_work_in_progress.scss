@@ -1,5 +1,12 @@
 .text-work-in-progress {
   font-family: $text-brand;
   text-align: center;
-  margin-bottom: 0px;
+  margin: 12px 0px;
+}
+
+//devices (desktops, 650px and up)
+@media (min-width: 650px) {
+  .text-work-in-progress {
+    margin: 0px 0px;
+  }
 }

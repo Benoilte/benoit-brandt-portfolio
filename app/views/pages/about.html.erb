@@ -3,7 +3,10 @@
     <div class="about-icons">
       <% @annecdotes_icons.each do |annecdote_icon| %>
         <div class="about-icon-content" data-display-annecdotes-about-target="annecdoteIcon" data-action="click->display-annecdotes-about#displayAnnecdote" data-display-annecdotes-about-category-param='<%="#{annecdote_icon}"%>'>
-          <%= image_tag "about-annecdotes-icons/#{annecdote_icon}_icon.svg", alt: "#{annecdote_icon} icon", class: "svg-about-icons about-icon-#{annecdote_icon}" %>
+          <svg viewBox="0 0 440 440" version="1.1" xmlns="http://www.w3.org/2000/svg">
+            <circle class="circle circle-svg" cx="220" cy="220" r="300"/>
+            <%= inline_svg_tag("about-annecdotes-icons/#{annecdote_icon}_icon.svg", class: "svg-about-icon about-icon-#{annecdote_icon}") %>
+          </svg>
         </div>
       <% end %>
     </div>

@@ -4,6 +4,6 @@ class PagesController < ApplicationController
   end
 
   def about
-    @annecdotes_icons = %w[computer mountains hiking tennis beer book van world home]
+    @annecdotes_icons = %w[computer mountains hiking tennis beer van world home]
   end
 end

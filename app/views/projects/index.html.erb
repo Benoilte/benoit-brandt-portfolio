@@ -9,7 +9,7 @@
       <div class="professional-projects">
         <% @professional_projects.each do |professional_project| %>
           <div class="professional-project">
-            <p><%= professional_project.title %></p>
+            <p class="underline-link" data-display-description-projects-target="project"><%= professional_project.title %></p>
           </div>
         <% end %>
       </div>
@@ -19,7 +19,7 @@
       <div class="personnal-projects">
         <% @personnal_projects.each do |personnal_project| %>
           <div class="personnal-project">
-            <p><%= personnal_project.title %></p>
+            <p class="underline-link" data-display-description-projects-target="project"><%= personnal_project.title %></p>
           </div>
         <% end %>
       </div>

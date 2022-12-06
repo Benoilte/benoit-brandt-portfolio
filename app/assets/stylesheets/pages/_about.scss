@@ -6,9 +6,14 @@
 }
 
 .about-icons{
+  margin: 0px 6px;
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  gap: 12px;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 6px;
+}
+
+.about-icon-content {
+  margin: 6px;
 }
 
 .svg-about-icons {

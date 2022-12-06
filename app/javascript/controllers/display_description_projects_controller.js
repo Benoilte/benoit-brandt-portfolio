@@ -53,7 +53,7 @@ export default class extends Controller {
   }
 
   toggleProjectTargetClass(event) {
-    this.experienceTargets.forEach(element => {
+    this.projectTargets.forEach(element => {
       if(event.currentTarget !== element) {
         element.removeAttribute("class");
         element.classList.add("underline-link")

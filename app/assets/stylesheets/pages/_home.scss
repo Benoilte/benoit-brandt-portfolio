@@ -6,9 +6,29 @@
   justify-content: center;
 }
 
+.profil-picture {
+  padding: 12px 12px;
+}
+
+.title-presentation {
+  padding: 12px 12px;
+}
+
+.title-presentation > h1 {
+  margin: 0px;
+}
+
 .text-presentation {
   font-family: $text-brand;
   text-align: justify;
-  margin-top: 16px;
+  margin-top: 12px;
   padding: 0 12px;
+}
+
+@media (min-width: 650px) {
+  .home-title-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }

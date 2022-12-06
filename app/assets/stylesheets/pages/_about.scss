@@ -1,3 +1,7 @@
+svg {
+  overflow: overlay;
+}
+
 .about-content {
   display: flex;
   min-height: calc(100vh - 90px);
@@ -14,12 +18,37 @@
 
 .about-icon-content {
   margin: 6px;
+  width: 32px;
 }
 
-.svg-about-icons {
+svg > .svg-about-icon {
   width: 32px;
   height: 32px;
   margin: 12px;
+}
+
+.svg-about-icon {
+  width: 32px;
+  height: 32px;
+  margin: 12px;
+}
+
+.circle {
+  fill: transparent;
+}
+
+.about-icon-content .circle-svg{
+  stroke: #000000;
+ stroke-width: 0px;
+ stroke-dasharray: 20 300;
+ stroke-dashoffset: 400;
+ transition: stroke-width 1s, stroke-dasharray 1s, stroke-dashoffset 1s;
+}
+
+.about-icon-content:hover .circle-svg{
+ stroke-width: 25px;
+ stroke-dasharray: 320 0;
+ stroke-dashoffset: 0;
 }
 
 .annecdotes-text{

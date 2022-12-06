@@ -6,19 +6,23 @@
       <div>
         <h1 class="projects-group">Professional</h1>
       </div>
-      <% @professional_projects.each do |professional_project| %>
-        <div class="professional-project">
-          <p><%= professional_project.title %></p>
-        </div>
-      <% end %>
+      <div class="professional-projects">
+        <% @professional_projects.each do |professional_project| %>
+          <div class="professional-project">
+            <p><%= professional_project.title %></p>
+          </div>
+        <% end %>
+      </div>
       <div>
         <h1 class="projects-group">Personnal</h1>
       </div>
-      <% @personnal_projects.each do |personnal_project| %>
-        <div class="personnal-project">
-          <p><%= personnal_project.title %></p>
-        </div>
-      <% end %>
+      <div class="personnal-projects">
+        <% @personnal_projects.each do |personnal_project| %>
+          <div class="personnal-project">
+            <p><%= personnal_project.title %></p>
+          </div>
+        <% end %>
+      </div>
     </div>
     <div class="project-description">
       <div class="title-project-description"></div>

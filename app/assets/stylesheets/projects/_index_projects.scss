@@ -1,0 +1,84 @@
+.projects-index-content {
+  min-height: calc(100vh - 90px);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.projects {
+  font-family: $text-brand;
+  font-family: "Source Sans Pro", sans-serif;
+  width: calc(100% - 24px);
+  border-bottom: 1px solid black;
+}
+
+.projects-group {
+  font-family: $title-brand;
+  font-size: 16px;
+  margin-top: 8px;
+}
+
+.professional-projects {
+
+}
+
+.personnal-projects {
+
+}
+
+.project-description {
+  font-family: $text-brand;
+  padding: 12px;
+  width: 100%;
+  height: 200px;
+  overflow: scroll;
+  overflow-y: auto;
+  overflow-x: auto;
+}
+
+.title-project-description {
+
+}
+
+.time-project-description {
+
+}
+
+.text-project-description {
+  margin-bottom: 0;
+}
+
+//devices (desktops, 650px and up)
+@media (min-width: 650px) {
+  .projects-index-content {
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+
+  .projects {
+    border-bottom: none;
+    width: 50%;
+    text-align: left;
+    margin: 0;
+    border-right: 1px solid black;
+    padding: 0 12px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .project-description {
+    padding: 0;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .text-project-description {
+    text-align: left;
+    padding: 0 12px;
+  }
+}

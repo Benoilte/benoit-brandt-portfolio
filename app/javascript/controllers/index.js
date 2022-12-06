@@ -7,6 +7,9 @@ import { application } from "./application"
 import DisplayAnnecdotesAboutController from "./display_annecdotes_about_controller"
 application.register("display-annecdotes-about", DisplayAnnecdotesAboutController)
 
+import DisplayDescriptionProjectsController from "./display_description_projects_controller"
+application.register("display-description-projects", DisplayDescriptionProjectsController)
+
 import DisplayDescriptionResumeController from "./display_description_resume_controller"
 application.register("display-description-resume", DisplayDescriptionResumeController)
 

@@ -24,7 +24,7 @@ Project.create!(title: "Next stop",
                 user: User.last)
 
 Project.create!(title: "Dahlia sante",
-                description: "Toast UI integration on Rails 7 and stimulus",
+                description: "Toast UI integration with Rails 7 and stimulus",
                 link: "www.dahlia-sante.fr",
                 professional: true,
                 start_date: Date.new(2022, 7, 11),
@@ -32,7 +32,7 @@ Project.create!(title: "Dahlia sante",
                 user: User.last)
 
 Project.create!(title: "My Portfolio",
-                description: "Here you are to discover my playground to experiment and my work",
+                description: "Here you are to discover my work",
                 link: "https://www.benoitbrandt.ch/",
                 professional: true,
                 start_date: Date.new(2022, 7, 11),
@@ -47,7 +47,7 @@ Project.create!(title: "Via Alpina",
                 end_date: Date.new(2022, 9, 9),
                 user: User.last)
 
-Project.create!(title: "Peugeot J5 Renovation",
+Project.create!(title: "Peugeot J5",
                 description: "Full inside renovation of an old Peugeot J5",
                 link: "www.next-stop.fr",
                 professional: false,
@@ -55,7 +55,7 @@ Project.create!(title: "Peugeot J5 Renovation",
                 end_date: Date.new(2022, 9, 9),
                 user: User.last)
 
-Project.create!(title: "Old farm renovation",
+Project.create!(title: "Old farm",
                 description: "Help my father to renovate his old farm",
                 link: "www.next-stop.fr",
                 professional: false,

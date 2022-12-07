@@ -9,7 +9,7 @@
       <div class="professional-projects">
         <% @professional_projects.each do |professional_project| %>
           <div class="professional-project">
-            <p class="underline-link" data-display-description-projects-target="project" data-action="click->display-description-projects#displayProjectDescription"><%= professional_project.title %></p>
+            <p class="underline-link" data-display-description-projects-target="project" data-action="click->display-description-projects#displayProjectDescription" data-display-description-projects-id-param='<%= professional_project.id %>' data-display-description-projects-section-param="professional"><%= professional_project.title %></p>
           </div>
         <% end %>
       </div>
@@ -19,7 +19,7 @@
       <div class="personnal-projects">
         <% @personnal_projects.each do |personnal_project| %>
           <div class="personnal-project">
-            <p class="underline-link" data-display-description-projects-target="project" data-action="click->display-description-projects#displayProjectDescription"><%= personnal_project.title %></p>
+            <p class="underline-link" data-display-description-projects-target="project" data-action="click->display-description-projects#displayProjectDescription" data-display-description-projects-id-param='<%= personnal_project.id %>' data-display-description-projects-section-param="personnal"><%= personnal_project.title %></p>
           </div>
         <% end %>
       </div>
@@ -27,7 +27,7 @@
     <div class="project-description">
       <div class="title-project-description"></div>
       <div class="time-project-description"></div>
-      <p class="text-project-description">click on one project to see the description</p>
+      <p class="text-project-description" data-display-description-projects-target="descriptionText">click on one project to see the description</p>
     </div>
   </div>
 </div>

@@ -48,3 +48,11 @@
 .selected_link:hover {
   color: black;
 }
+
+.highlight_link {
+  background-color: #e9ecef;
+  border-radius: 2px;
+  display: inline-block;
+  position: relative;
+  border-bottom: 1px solid transparent;
+}

@@ -2,7 +2,7 @@ import { Controller } from "@hotwired/stimulus"
 
 // Connects to data-controller="display-description-projects"
 export default class extends Controller {
-  static targets = ["descriptionText", "project", "projectDate", "iconContainer"]
+  static targets = ["descriptionText", "project", "projectDate", "iconContainer", "detailProject"]
 
   connect() {
     this.professionalProjectsData = [];
@@ -32,6 +32,7 @@ export default class extends Controller {
     if(this.section === "professional"){
       this.professionalProject = this.professionalProjectsData.find(element => element.professional_project_id === this.id);
       console.log(this.professionalProjectId);
+      this.id = this.professionalProject.professional_project_id
       this.description = this.professionalProject.professional_project_description;
       this.title = this.professionalProject.professional_project_title;
       this.startDate = this.professionalProject.professional_project_start_date;
@@ -40,10 +41,12 @@ export default class extends Controller {
       this.iconContainerTarget.removeAttribute("class");
       this.iconContainerTarget.classList.add(`${this.title.toLowerCase().replaceAll(" ", "-")}-project-icon`, `container-project-icon`)
       this.descriptionTextTarget.innerText = this.description
+      this.detailProjectTarget.innerHTML = `<a href="/projects/${this.id}" class="underline-link text-link">Get more details</a>`
       // this.descriptionCompanyTarget.innerHTML = `<h1>${this.company}</h1>`
       // this.descriptionDateTarget.innerHTML = `<p><strong>from ${this.startDate} to ${this.endDate}</strong> ${this.duration}</p>`
     } else {
       this.personnalProject = this.personnalProjectsData.find(element => element.personnal_project_id === this.id);
+      this.id = this.personnalProject.personnal_project_id
       this.description = this.personnalProject.personnal_project_description;
       this.title = this.personnalProject.personnal_project_title;
       this.startDate = this.personnalProject.personnal_project_start_date;
@@ -52,6 +55,7 @@ export default class extends Controller {
       this.iconContainerTarget.removeAttribute("class");
       this.iconContainerTarget.classList.add(`${this.title.toLowerCase().replaceAll(" ", "-")}-project-icon`, `container-project-icon`)
       this.descriptionTextTarget.innerText = this.description
+      this.detailProjectTarget.innerHTML = `<a href="/projects/${this.id}" class="underline-link text-link">Get more details</a>`
       // this.descriptionCompanyTarget.innerHTML = `<h1>${this.institution}</h1>`
       // this.projectDateTarget.innerHTML = `<p><strong>from ${this.startDate} to ${this.endDate}</strong> ${this.duration}</p>`
     }

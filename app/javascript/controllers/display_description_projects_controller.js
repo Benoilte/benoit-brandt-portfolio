@@ -2,7 +2,7 @@ import { Controller } from "@hotwired/stimulus"
 
 // Connects to data-controller="display-description-projects"
 export default class extends Controller {
-  static targets = ["descriptionText", "project", "projectDate"]
+  static targets = ["descriptionText", "project", "projectDate", "iconContainer"]
 
   connect() {
     this.professionalProjectsData = [];
@@ -33,10 +33,12 @@ export default class extends Controller {
       this.professionalProject = this.professionalProjectsData.find(element => element.professional_project_id === this.id);
       console.log(this.professionalProjectId);
       this.description = this.professionalProject.professional_project_description;
-      this.company = this.professionalProject.professional_project_title;
+      this.title = this.professionalProject.professional_project_title;
       this.startDate = this.professionalProject.professional_project_start_date;
       // this.endDate = this.professionalProject.professional_project_end_date;
       // this.duration = this.professionalProject.professional_project_duration;
+      this.iconContainerTarget.removeAttribute("class");
+      this.iconContainerTarget.classList.add(`${this.title.toLowerCase().replaceAll(" ", "-")}-project-icon`, `container-project-icon`)
       this.descriptionTextTarget.innerText = this.description
       // this.descriptionCompanyTarget.innerHTML = `<h1>${this.company}</h1>`
       // this.descriptionDateTarget.innerHTML = `<p><strong>from ${this.startDate} to ${this.endDate}</strong> ${this.duration}</p>`

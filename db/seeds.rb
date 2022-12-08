@@ -11,15 +11,15 @@ Project.create!(title: "feed my fish",
                 description: "Air bnb clone in one week",
                 link: "",
                 professional: true,
-                start_date: Date.new(2022, 7, 11),
-                end_date: Date.new(2022, 9, 9),
+                start_date: Date.new(2022, 8, 22),
+                end_date: Date.new(2022, 8, 26),
                 user: User.last)
 
 Project.create!(title: "Next stop",
                 description: "Have a good trip in public transport",
                 link: "www.next-stop.fr",
                 professional: true,
-                start_date: Date.new(2022, 7, 11),
+                start_date: Date.new(2022, 8, 27),
                 end_date: Date.new(2022, 9, 9),
                 user: User.last)
 
@@ -27,48 +27,48 @@ Project.create!(title: "Dahlia sante",
                 description: "Toast UI integration with Rails 7 and stimulus",
                 link: "www.dahlia-sante.fr",
                 professional: true,
-                start_date: Date.new(2022, 7, 11),
-                end_date: Date.new(2022, 9, 9),
+                start_date: Date.new(2022, 9, 9),
+                end_date: Date.new(2022, 12, 9),
                 user: User.last)
 
 Project.create!(title: "My Portfolio",
                 description: "Here you are to discover my work",
                 link: "https://www.benoitbrandt.ch/",
                 professional: true,
-                start_date: Date.new(2022, 7, 11),
-                end_date: Date.new(2022, 9, 9),
+                start_date: Date.new(2022, 10, 1),
+                end_date: Date.new(2022, 12, 9),
                 user: User.last)
 
 Project.create!(title: "Via Alpina",
                 description: "3 weeks hiking across switzerland mountains",
                 link: "",
                 professional: false,
-                start_date: Date.new(2022, 7, 11),
-                end_date: Date.new(2022, 9, 9),
+                start_date: Date.new(2020, 7, 19),
+                end_date: Date.new(2020, 8, 7),
                 user: User.last)
 
 Project.create!(title: "Peugeot J5",
                 description: "Full inside renovation of an old Peugeot J5",
                 link: "www.next-stop.fr",
                 professional: false,
-                start_date: Date.new(2022, 7, 11),
-                end_date: Date.new(2022, 9, 9),
+                start_date: Date.new(2021, 1, 1),
+                end_date: Date.new(2021, 8, 31),
                 user: User.last)
 
 Project.create!(title: "Old farm",
                 description: "Help my father to renovate his old farm",
                 link: "www.next-stop.fr",
                 professional: false,
-                start_date: Date.new(2022, 7, 11),
-                end_date: Date.new(2022, 9, 9),
+                start_date: Date.new(2021, 6, 1),
+                end_date: Date.new(2021, 9, 1),
                 user: User.last)
 
 Project.create!(title: "Kilimanjaro",
                 description: "1 week hiking on the highest african mountain",
                 link: "www.next-stop.fr",
                 professional: false,
-                start_date: Date.new(2022, 7, 11),
-                end_date: Date.new(2022, 9, 9),
+                start_date: Date.new(2015, 9, 1),
+                end_date: Date.new(2015, 9, 9),
                 user: User.last)
 
 # ProfessionalExperiences creation

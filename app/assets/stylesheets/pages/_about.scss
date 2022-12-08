@@ -52,6 +52,12 @@ svg > .svg-about-icon {
  stroke-dashoffset: 0;
 }
 
+.about-icon-content .circle-svg-selected {
+  stroke-width: 25px;
+  stroke-dasharray: 320 0;
+  stroke-dashoffset: 0;
+}
+
 .annecdotes-text{
   font-family: $text-brand;
   margin-top: 32px;

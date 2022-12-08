@@ -79,6 +79,10 @@
   margin-bottom: 0;
 }
 
+// .link-project-details {
+
+// }
+
 //devices (desktops, 650px and up)
 @media (min-width: 650px) {
   .projects-index-content {
@@ -114,6 +118,11 @@
   }
 
   .text-project-description {
+    text-align: left;
+    padding: 0 12px;
+  }
+
+  .link-project-details {
     text-align: left;
     padding: 0 12px;
   }

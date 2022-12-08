@@ -25,11 +25,37 @@
   gap: 6px;
 }
 
+.container-project-icon {
+  height: 60px;
+  width: 60px;
+  margin: 0px auto 12px;
+}
+
+.feed-my-fish-project-icon {
+  background-image:  asset-url("project-icons/fish.png");
+  background-size: contain;
+}
+
+.next-stop-project-icon {
+  background-image:  asset-url("project-icons/bonome-next-stop.svg");
+  background-size: contain;
+}
+
+.dahlia-sante-project-icon {
+  background-image:  asset-url("project-icons/gif-fond_dahlia.gif");
+  background-size: contain;
+}
+
+// .my-portfolio-project-icon {
+
+// }
+
 .personnal-projects {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 6px;
 }
+
 
 .project-description {
   font-family: $text-brand;
@@ -41,13 +67,13 @@
   overflow-x: auto;
 }
 
-.title-project-description {
+// .title-project-description {
 
-}
+// }
 
-.time-project-description {
+// .time-project-description {
 
-}
+// }
 
 .text-project-description {
   margin-bottom: 0;
@@ -71,6 +97,12 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+  }
+
+  .container-project-icon {
+    height: 60px;
+    width: 60px;
+    margin: 0px 0px 12px 12px;
   }
 
   .project-description {

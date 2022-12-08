@@ -28,7 +28,7 @@ Project.create!(title: "Dahlia sante",
                 link: "www.dahlia-sante.fr",
                 professional: true,
                 start_date: Date.new(2022, 9, 9),
-                end_date: Date.new(2022, 12, 9),
+                now: true,
                 user: User.last)
 
 Project.create!(title: "My Portfolio",
@@ -36,7 +36,7 @@ Project.create!(title: "My Portfolio",
                 link: "https://www.benoitbrandt.ch/",
                 professional: true,
                 start_date: Date.new(2022, 10, 1),
-                end_date: Date.new(2022, 12, 9),
+                now: true,
                 user: User.last)
 
 Project.create!(title: "Via Alpina",

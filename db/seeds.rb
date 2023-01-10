@@ -49,15 +49,15 @@ Project.create!(title: "Via Alpina",
 
 Project.create!(title: "Peugeot J5",
                 description: "Full inside renovation of an old Peugeot J5",
-                link: "www.next-stop.fr",
+                link: "",
                 professional: false,
                 start_date: Date.new(2021, 1, 1),
                 end_date: Date.new(2021, 8, 31),
                 user: User.last)
 
-Project.create!(title: "Old farm",
+Project.create!(title: "farm renovation",
                 description: "Help my father to renovate his old farm",
-                link: "www.next-stop.fr",
+                link: "",
                 professional: false,
                 start_date: Date.new(2021, 6, 1),
                 end_date: Date.new(2021, 9, 1),
@@ -65,11 +65,19 @@ Project.create!(title: "Old farm",
 
 Project.create!(title: "Kilimanjaro",
                 description: "1 week hiking on the highest african mountain",
-                link: "www.next-stop.fr",
+                link: "",
                 professional: false,
                 start_date: Date.new(2015, 9, 1),
                 end_date: Date.new(2015, 9, 9),
                 user: User.last)
+
+Project.create!(title: "WorkAway",
+                  description: "Different experiences to help people and discover new places",
+                  link: "",
+                  professional: false,
+                  start_date: Date.new(2021, 10, 1),
+                  end_date: Date.new(2022, 3, 31),
+                  user: User.last)
 
 # ProfessionalExperiences creation
 puts "ProfessionalExperiences Creation"

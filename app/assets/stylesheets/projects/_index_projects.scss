@@ -67,13 +67,14 @@
   overflow-x: auto;
 }
 
-// .title-project-description {
+.time-project {
+  text-align: left;
+  font-size: 12px;
+}
 
-// }
-
-// .time-project-description {
-
-// }
+.time-project > p {
+margin-bottom: 8px;
+}
 
 .text-project-description {
   margin-bottom: 0;
@@ -115,6 +116,10 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+  }
+
+  .time-project {
+    padding: 0 12px;
   }
 
   .text-project-description {

@@ -22,6 +22,10 @@ svg {
   cursor: pointer;
 }
 
+svg {
+  overflow: visible;
+}
+
 svg > .svg-about-icon {
   width: 32px;
   height: 32px;

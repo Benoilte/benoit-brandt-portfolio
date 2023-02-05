@@ -15,3 +15,6 @@ application.register("display-description-resume", DisplayDescriptionResumeContr
 
 import HelloController from "./hello_controller"
 application.register("hello", HelloController)
+
+import NavbarPropertiesController from "./navbar_properties_controller"
+application.register("navbar-properties", NavbarPropertiesController)

@@ -12,6 +12,9 @@
             <%= link_to "Home", root_path, class: class_names({ "navbar-link underline-link": !current_page?('/'), "selected_link": current_page?('/')}) %>
           </li>
           <li class="nav-item">
+            <%= link_to "Description", description_path, class: class_names({ "navbar-link underline-link": !current_page?('/description'), "selected_link": current_page?('/description')}) %>
+          </li>
+          <li class="nav-item">
             <%= link_to "Resume", professional_experiences_path, class: class_names({ "navbar-link underline-link": !current_page?('/professional_experiences'), "selected_link": current_page?('/professional_experiences')}) %>
           </li>
           <li class="nav-item">

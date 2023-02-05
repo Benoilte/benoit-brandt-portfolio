@@ -1,0 +1,15 @@
+.home-banner {
+  background-image: url(https://res.cloudinary.com/dx6ruirpq/image/upload/v1675616914/BenoitBrandtPortfolio/DSC_0749_black_and_white_smaller_ep1dgw.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+@media (min-width: 650px) {
+  .home-banner {
+    background-image: url(https://res.cloudinary.com/dx6ruirpq/image/upload/v1675615808/BenoitBrandtPortfolio/DSC_0749_black_and_white_sgqknu.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+  }
+}

@@ -1,6 +1,6 @@
-// .home-banner {
-
-// }
+.home-banner {
+  // position: relative;
+}
 
 .home-banner::before {
 	content: " ";
@@ -24,6 +24,15 @@
   flex-direction: column;
   align-items: flex-start;
   margin-left: 12px;
+}
+
+.home-text {
+  position: relative;
+  top: 100vh;
+}
+
+.home-description {
+  padding-bottom: 40px;
 }
 
 @media (min-width: 650px) {

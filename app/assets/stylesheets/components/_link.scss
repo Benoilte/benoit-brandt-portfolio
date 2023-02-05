@@ -17,6 +17,10 @@
   color: black;
 }
 
+.underline-link-home:hover{
+  color: grey;
+}
+
 .underline-link::after {
   content: '';
   position: absolute;
@@ -28,6 +32,10 @@
   background-color: black;
   transform-origin: bottom left;
   transition: transform 0.5s ease-out;
+}
+
+.underline-link-home::after{
+  background-color: grey;
 }
 
 .underline-link:hover::after {
@@ -42,6 +50,10 @@
   padding: 0px 4px 0px 4px;
   pointer-events: none;
   cursor: default;
+}
+
+.selected_link_home {
+  color: grey;
 }
 
 .selected_link:hover {

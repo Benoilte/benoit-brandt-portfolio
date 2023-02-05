@@ -1,6 +1,7 @@
 class PagesController < ApplicationController
   skip_before_action :authenticate_user!, only: %i[home description about]
   def home
+    # raise
   end
 
   def description

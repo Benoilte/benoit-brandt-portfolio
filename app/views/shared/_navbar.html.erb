@@ -1,6 +1,6 @@
-<div class="navbar navbar-expand-sm navbar-benoilte" data-controller="navbar-properties">
+<div class="navbar navbar-expand-sm navbar-benoilte navbar-benoilte-background" data-controller="navbar-properties" data-navbar-properties-path-value= "<%= request.fullpath %>" data-navbar-properties-target="navbar" >
   <div class="container-fluid">
-    <%= link_to "BENOIT BRANDT", root_path, class: "navbar-brand" %>
+    <%= link_to "BB", root_path, class: "navbar-brand", data: { navbar_properties_target:"title" } %>
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -9,22 +9,22 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto navbar-links">
           <li class="nav-item">
-            <%= link_to "Home", root_path, class: class_names({ "navbar-link underline-link": !current_page?('/'), "selected_link": current_page?('/')}) %>
+            <%= link_to "Home", root_path, class: class_names({ "navbar-link underline-link": !current_page?('/'), "selected_link": current_page?('/')}), data: { navbar_properties_target:"homeLink" } %>
           </li>
           <li class="nav-item">
-            <%= link_to "Description", description_path, class: class_names({ "navbar-link underline-link": !current_page?('/description'), "selected_link": current_page?('/description')}) %>
+            <%= link_to "Description", description_path, class: class_names({ "navbar-link underline-link": !current_page?('/description'), "selected_link": current_page?('/description')}), data: { navbar_properties_target:"links" } %>
           </li>
           <li class="nav-item">
-            <%= link_to "Resume", professional_experiences_path, class: class_names({ "navbar-link underline-link": !current_page?('/professional_experiences'), "selected_link": current_page?('/professional_experiences')}) %>
+            <%= link_to "Resume", professional_experiences_path, class: class_names({ "navbar-link underline-link": !current_page?('/professional_experiences'), "selected_link": current_page?('/professional_experiences')}), data: { navbar_properties_target:"links" } %>
           </li>
           <li class="nav-item">
-            <%= link_to "Projects", projects_path, class: class_names({ "navbar-link underline-link": !current_page?('/projects'), "selected_link": current_page?('/projects')}) %>
+            <%= link_to "Projects", projects_path, class: class_names({ "navbar-link underline-link": !current_page?('/projects'), "selected_link": current_page?('/projects')}), data: { navbar_properties_target:"links" } %>
           </li>
           <li class="nav-item">
-            <%= link_to "About", about_path, class: class_names({ "navbar-link underline-link": !current_page?('/about'), "selected_link": current_page?('/about')}) %>
+            <%= link_to "About", about_path, class: class_names({ "navbar-link underline-link": !current_page?('/about'), "selected_link": current_page?('/about')}), data: { navbar_properties_target:"links" } %>
           </li>
           <li class="nav-item">
-            <%= link_to "contact", new_contact_path, class: class_names({ "navbar-link underline-link": !current_page?('/contacts/new'), "selected_link": current_page?('/contacts/new')}) %>
+            <%= link_to "contact", new_contact_path, class: class_names({ "navbar-link underline-link": !current_page?('/contacts/new'), "selected_link": current_page?('/contacts/new')}), data: { navbar_properties_target:"links" } %>
           </li>
           <% if user_signed_in? %>
             <li class="nav-item">

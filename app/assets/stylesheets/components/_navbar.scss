@@ -1,11 +1,13 @@
 .navbar-benoilte {
-  position: relative;
+  position: fixed;
+  width: 100%;
   z-index: 1;
   justify-content: space-between;
 }
 
 .navbar-benoilte-background {
   background: white;
+  transition: 1s;
 }
 
 .navbar-benoilte .navbar-collapse {
@@ -19,6 +21,7 @@
 
 .navbar-brand-home {
   color: grey;
+  transition: 1s;
 }
 
 .navbar-brand-home:hover {

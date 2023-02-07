@@ -20,4 +20,17 @@ export default class extends Controller {
     }
   }
 
+  updateNavbar(){
+    if (window.scrollY >= (window.innerHeight - 55) && this.pathValue === "/") {
+      this.navbarTarget.classList.add("navbar-benoilte-background")
+      this.titleTarget.classList.remove("navbar-brand-home")
+      this.homeLinkTarget.classList.remove("selected_link_home")
+      this.linksTargets.forEach(link => {
+        link.classList.remove("underline-link-home")
+        link.classList.remove("underline-link-home")
+      });
+    } else {
+      this.setNavbar()
+    }
+  }
 }

@@ -1,15 +1,9 @@
-.home-banner::before {
-	content: " ";
-	position: absolute;
-	left: 0;
-	top: 0;
-  width: 100%;
-	height: 100%;
+.home-banner {
+	height: 100vh;
   background-image: url(https://res.cloudinary.com/dx6ruirpq/image/upload/v1675616914/BenoitBrandtPortfolio/DSC_0749_black_and_white_smaller_ep1dgw.jpg);
-  filter: brightness(0.4);
+  filter: brightness(0.6);
   background-size: cover;
   background-repeat: no-repeat;
-  z-index: 0;
 }
 
 .home-banner-text {
@@ -23,26 +17,19 @@
 }
 
 .home-text {
-  position: relative;
-  top: 100vh;
+  padding-top: 12px;
 }
 
-.home-description {
-  padding-bottom: 40px;
-}
+// .home-description {
+
+// }
 
 @media (min-width: 650px) {
-  .home-banner::before {
-    content: " ";
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
+  .home-banner {
+    height: 100vh;
     background-image: url(https://res.cloudinary.com/dx6ruirpq/image/upload/v1675615808/BenoitBrandtPortfolio/DSC_0749_black_and_white_sgqknu.jpg);
-    filter: brightness(0.4);
+    filter: brightness(0.6);
     background-size: cover;
     background-repeat: no-repeat;
-    z-index: 0;
   }
 }

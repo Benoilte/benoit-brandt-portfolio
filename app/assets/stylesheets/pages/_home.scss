@@ -16,13 +16,22 @@
   margin-left: 12px;
 }
 
-.home-text {
-  padding-top: 12px;
+.home-banner-short-text-description {
+  text-align: left;
+  width: 240px;
 }
 
-// .home-description {
+.home-banner-short-text-description p {
+  margin: 0px;
+}
 
-// }
+.home-text {
+  padding: 12px 12px 0px 12px;
+}
+
+.home-description {
+  text-align: left;
+}
 
 @media (min-width: 650px) {
   .home-banner {
@@ -31,5 +40,9 @@
     filter: brightness(0.6);
     background-size: cover;
     background-repeat: no-repeat;
+  }
+
+  .home-banner-short-text-description {
+    width: 328px;
   }
 }

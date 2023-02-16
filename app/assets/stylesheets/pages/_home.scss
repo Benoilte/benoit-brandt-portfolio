@@ -16,6 +16,15 @@
   margin-left: 12px;
 }
 
+.home-banner-short-text-description {
+  text-align: left;
+  width: 240px;
+}
+
+.home-banner-short-text-description p {
+  margin: 0px;
+}
+
 .home-text {
   padding-top: 12px;
 }
@@ -31,5 +40,9 @@
     filter: brightness(0.6);
     background-size: cover;
     background-repeat: no-repeat;
+  }
+
+  .home-banner-short-text-description {
+    width: 328px;
   }
 }
